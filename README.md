@@ -5,11 +5,15 @@
 ```
 pip install -r requirements.txt
 ```
+
 ## 2. 下载数据
 使用 https://github.com/DLLXW/baby-llama2-chinese 的经过预处理的语料。
+
 预训练选择wiki、medical、baidubaike三个文件夹的语料，大约7GB多一点。
+
 微调使用alpaca-zh、bell。
-讲数据放入data文件夹，具体如下：
+
+讲数据放入data文件夹，项目结构具体如下：
 ```
 D:\CODE\手撕LLAMA3
 │  config.py
@@ -59,3 +63,29 @@ D:\CODE\手撕LLAMA3
             sft_model_max_seq_256_params_274.3M_config.yaml
             sft_model_max_seq_256_params_274.3M_loss.png
 ```
+进入`data`文件夹，根据需要使用`procees_data.py`来预处理数据
+
+## 3. 预训练
+在`config.py`中修改配置，运行
+```
+python pretrain.py
+```
+结果会保存在`results`文件夹中。
+
+## 4. 微调
+由于模型参数量较少，使用全部参数进行微调。
+
+在`config.py`中修改配置，运行
+```
+python sft.py
+```
+结果会保存在`results`文件夹中。
+
+## 5. 结果
+预训练在24GB显存的单卡4090上训练一个epoch大约不到48小时。
+
+模型整体参数量较小，使用的数据量也不多，效果如下：
+[](./example.mp4)
+
+
+
