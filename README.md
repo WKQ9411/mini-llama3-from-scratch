@@ -2,8 +2,14 @@
 本项目旨在从零实现一个迷你版llama3，并进行预训练和微调。
 
 ## 1. 配置环境
-`pip install -r requirements.txt`
-
+```
+pip install -r requirements.txt
+```
+## 2. 下载数据
+使用 https://github.com/DLLXW/baby-llama2-chinese 的经过预处理的语料。
+预训练选择wiki、medical、baidubaike三个文件夹的语料，大约7GB多一点。
+微调使用alpaca-zh、bell。
+讲数据放入data文件夹，具体如下：
 ```
 D:\CODE\手撕LLAMA3
 │  config.py
