@@ -1,5 +1,8 @@
 # mini-llama3-from-scratch
-从零实现一个迷你版llama3，并进行预训练和微调
+本项目旨在从零实现一个迷你版llama3，并进行预训练和微调。
+
+## 1. 配置环境
+`pip install -r requirements.txt`
 
 ```
 D:\CODE\手撕LLAMA3
@@ -36,10 +39,8 @@ D:\CODE\手撕LLAMA3
 │          sft_data.csv
 │
 ├─model
-│  │  llama.py
 │  │
-│  └─__pycache__
-│          llama.cpython-39.pyc
+│  └─llama.py
 │
 └─results
     ├─pretrain_model_max_seq_256_params_274.3M
