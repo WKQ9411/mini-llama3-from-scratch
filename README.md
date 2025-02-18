@@ -81,11 +81,19 @@ python sft.py
 ```
 结果会保存在`results`文件夹中。
 
+## 5. 使用模型
+填入模型名称、路径等，运行
+```
+python run_model.py
+```
+
 ## 5. 结果
 预训练在24GB显存的单卡4090上训练一个epoch大约不到48小时。
 
 模型整体参数量较小，使用的数据量也不多，效果如下：
 [](./example.mp4)
+![预训练损失曲线](./results/pretrain_model_max_seq_256_params_274.3M_loss.png)
+![微调损失曲线](./results/sft_model_max_seq_256_params_274.3M_loss.png)
 
 
 
