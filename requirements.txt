@@ -1,0 +1,6 @@
+sentencepiece
+transformers==4.33.2
+pandas
+matplotlib
+scikit-learn
+yacs
