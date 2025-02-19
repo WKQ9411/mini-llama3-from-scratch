@@ -1,5 +1,6 @@
 # mini-llama3-from-scratch
 本项目旨在从零实现一个迷你版llama3，并进行预训练和微调。
+相关理论参考：https://blog.csdn.net/m0_55846238/article/details/145728695?spm=1001.2014.3001.5501
 
 ## 1. 配置环境
 ```
